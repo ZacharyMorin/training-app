@@ -9,25 +9,27 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
 
 
 const MAT_MODULES = [
-    MatToolbarModule,
-    MatFormFieldModule,
-    MatDividerModule,
-    MatDatepickerModule,
-    MatInputModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatCheckboxModule,
-    MatSelectModule
+	MatToolbarModule,
+	MatFormFieldModule,
+	MatDividerModule,
+	MatDatepickerModule,
+	MatInputModule,
+	MatButtonModule,
+	MatButtonToggleModule,
+	MatCheckboxModule,
+	MatSelectModule,
+	MatCardModule
 ];
 
 @NgModule({
-    declarations: [],
-    imports: [CommonModule, MAT_MODULES],
-    exports: [MAT_MODULES]
+	declarations: [],
+	imports: [CommonModule, MAT_MODULES],
+	exports: [MAT_MODULES]
 })
 export class MaterialModule {
-    
+
 }
