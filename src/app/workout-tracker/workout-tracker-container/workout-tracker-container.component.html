@@ -1,0 +1,10 @@
+<div class="container">
+    <app-start-exercise
+        *ngIf="!startExercise; else selectExerciseType"
+        (startExercise)="startExercise = !startExercise"
+    ></app-start-exercise>
+
+    <ng-template #selectExerciseType>
+        <app-exercise-type-selection></app-exercise-type-selection>
+    </ng-template>
+</div>
