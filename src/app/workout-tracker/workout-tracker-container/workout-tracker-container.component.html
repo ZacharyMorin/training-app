@@ -5,6 +5,6 @@
     ></app-start-exercise>
 
     <ng-template #selectExerciseType>
-        <app-exercise-type-selection></app-exercise-type-selection>
+        <app-exercise-type-selection (selectedExerciseType)='selectedExerciseType($event)'></app-exercise-type-selection>
     </ng-template>
 </div>

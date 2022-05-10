@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 
 @Component({
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./exercise-type-selection.component.scss']
 })
 export class ExerciseTypeSelectionComponent implements OnInit {
+	@Output() selectedExerciseType = new EventEmitter<number>()
+	
 	exerciseTypeSelectionList = [
 		{
 			id: 1,
@@ -29,5 +31,4 @@ export class ExerciseTypeSelectionComponent implements OnInit {
 	ngOnInit() {
 		console.log(this.exerciseTypeSelectionList);
 	}
-
 }

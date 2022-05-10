@@ -16,4 +16,8 @@ export class WorkoutTrackerContainerComponent implements OnInit {
 	ngOnInit() {
 	}
 
+	selectedExerciseType(id) {
+		alert(id);
+	}
+
 }
