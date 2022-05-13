@@ -7,6 +7,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StartExerciseComponent } from './start-exercise/start-exercise.component';
 import { ExerciseTypeSelectionComponent } from './exercise-type-selection/exercise-type-selection.component';
 import { WorkoutTrackerFormContainerComponent } from './workout-tracker-form-container/workout-tracker-form-container.component';
+import { WeightsFormComponent } from './weights-form/weights-form.component';
+import { CardioFormComponent } from './cardio-form/cardio-form.component';
+import { HiitFormComponent } from './hiit-form/hiit-form.component';
 
 
 @NgModule({
@@ -14,7 +17,10 @@ import { WorkoutTrackerFormContainerComponent } from './workout-tracker-form-con
 		WorkoutTrackerContainerComponent,
 		WorkoutTrackerFormContainerComponent,
 		StartExerciseComponent,
-  	ExerciseTypeSelectionComponent
+  	ExerciseTypeSelectionComponent,
+		WeightsFormComponent,
+		CardioFormComponent,
+		HiitFormComponent
 	],
 	imports: [
 		CommonModule,
