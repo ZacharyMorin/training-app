@@ -6,7 +6,7 @@ import { MaterialModule } from '../material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StartExerciseComponent } from './start-exercise/start-exercise.component';
 import { ExerciseTypeSelectionComponent } from './exercise-type-selection/exercise-type-selection.component';
-import { WorkoutTrackerFormContainerComponent } from './workout-tracker-form-container/workout-tracker-form.component';
+import { WorkoutTrackerFormContainerComponent } from './workout-tracker-form-container/workout-tracker-form-container.component';
 
 
 @NgModule({
