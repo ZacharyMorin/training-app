@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'app-workout-tracker-form',
-  templateUrl: './workout-tracker-form.component.html',
-  styleUrls: ['./workout-tracker-form.component.scss']
+  selector: 'app-workout-tracker-form-container',
+  templateUrl: './workout-tracker-form-container.component.html',
+  styleUrls: ['./workout-tracker-form-container.component.scss']
 })
 export class WorkoutTrackerFormContainerComponent implements OnInit {
 
