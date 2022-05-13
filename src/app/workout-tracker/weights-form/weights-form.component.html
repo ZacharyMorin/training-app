@@ -1,6 +1,6 @@
 <div class="container">
 
-  <mat-card-title>Weights</mat-card-title>
+  <mat-card-title>Enter Set Info</mat-card-title>
 
   <form [formGroup]='weightsForm'>
   
@@ -34,13 +34,16 @@
       >
     </mat-form-field>
 
-    <mat-icon
-      class='add-set-icon'
-      matTooltip='Add Set'
-      color='primary'
-    >
-      add_circle
-    </mat-icon>
+    <button mat-icon-button class='add-set-btn'>
+      <mat-icon
+        class='add-set-icon'
+        matTooltip='Add Set'
+        color='primary'
+      >
+        add_circle
+      </mat-icon>
+    </button>
+
 
   </form>
 
