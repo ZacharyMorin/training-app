@@ -1,5 +1,5 @@
 <div class='main-content'>
-    <ng-container [ngSwitch]="exerciseSelectionType">
+    <ng-container [ngSwitch]="exerciseSelectionType.type">
 
         <ng-container *ngSwitchCase="'Weights'">
             <app-weights-form></app-weights-form>
