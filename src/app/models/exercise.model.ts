@@ -18,3 +18,8 @@ export interface IHiit extends IExercise {
 	time?: number;
 	description?: string;
 }
+
+export interface IExerciseSelectionType {
+	id: number;
+	type: string;
+}

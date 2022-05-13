@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { IExerciseSelectionType } from '../../models/exercise.model';
 
 
 @Component({
@@ -7,9 +8,9 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 	styleUrls: ['./exercise-type-selection.component.scss']
 })
 export class ExerciseTypeSelectionComponent implements OnInit {
-	@Output() selectedExerciseType = new EventEmitter<number>()
+	@Output() selectedExerciseType = new EventEmitter<IExerciseSelectionType>()
 	
-	exerciseTypeSelectionList = [
+	exerciseTypeSelectionList: IExerciseSelectionType[] = [
 		{
 			id: 1,
 			type: 'Weights'
@@ -29,6 +30,6 @@ export class ExerciseTypeSelectionComponent implements OnInit {
 
 
 	ngOnInit() {
-		console.log(this.exerciseTypeSelectionList);
+		
 	}
 }

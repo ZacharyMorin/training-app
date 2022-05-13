@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './workout-tracker-form.component.html',
   styleUrls: ['./workout-tracker-form.component.scss']
 })
-export class WorkoutTrackerFormComponent implements OnInit {
+export class WorkoutTrackerFormContainerComponent implements OnInit {
 
   constructor() { }
 

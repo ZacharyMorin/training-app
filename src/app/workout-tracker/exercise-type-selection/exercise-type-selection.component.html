@@ -1,9 +1,16 @@
 <div class="container">
+    
     <div class="selection-list-title">
         <mat-card-title>Select The Exercise Type</mat-card-title>
     </div>
 
-    <div class="selection-list" *ngFor="let exerciseType of exerciseTypeSelectionList" (click)='selectedExerciseType.emit(exerciseType.id)'>
-        <mat-card>{{exerciseType.type}}</mat-card>
+    <div class="selection-list">
+        <mat-card
+            *ngFor="let exerciseType of exerciseTypeSelectionList"
+            (click)='selectedExerciseType.emit(exerciseType)'
+        >
+            {{exerciseType.type}}
+        </mat-card>
     </div>
+    
 </div>
