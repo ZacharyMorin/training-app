@@ -10,7 +10,7 @@ import { IWeights } from '../../models/exercise.model';
 })
 export class WeightsFormComponent implements OnInit, OnDestroy {
 
-  @Output() weightExercise = new EventEmitter<IWeights>()
+  @Output() weightExercise = new EventEmitter<IWeights>();
 
   weightsForm: FormGroup;
 
