@@ -1,43 +1,48 @@
-<form [formGroup]='weightsForm'>
+<div class="container">
 
-  <mat-form-field>
-    <mat-label>Exercise Name</mat-label>
-    <input 
-      matInput
-      autocomplete='auto_off'
-      type="text"
-      formControlName='name'
+  <mat-card-title>Weights</mat-card-title>
+
+  <form [formGroup]='weightsForm'>
+  
+    <mat-form-field>
+      <mat-label>Exercise Name</mat-label>
+      <input 
+        matInput
+        autocomplete='auto_off'
+        type="text"
+        formControlName='name'
+      >
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Weight (lbs)</mat-label>
+      <input 
+        matInput
+        autocomplete='auto_off'
+        type="number"
+        formControlName='weight'
+      >
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Reps</mat-label>
+      <input 
+        matInput
+        autocomplete='auto_off'
+        type="number"
+        formControlName='reps'
+      >
+    </mat-form-field>
+
+    <mat-icon
+      class='add-set-icon'
+      matTooltip='Add Set'
+      color='primary'
     >
-  </mat-form-field>
+      add_circle
+    </mat-icon>
 
-  <mat-form-field>
-    <mat-label>Exercise Name</mat-label>
-    <input 
-      matInput
-      autocomplete='auto_off'
-      type="text"
-      formControlName='name'
-    >
-  </mat-form-field>
+  </form>
 
-  <mat-form-field>
-    <mat-label>Exercise Name</mat-label>
-    <input 
-      matInput
-      autocomplete='auto_off'
-      type="text"
-      formControlName='name'
-    >
-  </mat-form-field>
-
-  <mat-form-field>
-    <mat-label>Exercise Name</mat-label>
-    <input 
-      matInput
-      autocomplete='auto_off'
-      type="text"
-      formControlName='name'
-    >
-  </mat-form-field>
-
-</form>
+  <!-- <mat-icon>add_task</mat-icon> -->
+</div>

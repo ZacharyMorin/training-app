@@ -10,7 +10,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 const MAT_MODULES = [
 	MatToolbarModule,
@@ -22,7 +23,9 @@ const MAT_MODULES = [
 	MatButtonToggleModule,
 	MatCheckboxModule,
 	MatSelectModule,
-	MatCardModule
+	MatCardModule,
+	MatIconModule,
+	MatTooltipModule
 ];
 
 @NgModule({
