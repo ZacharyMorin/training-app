@@ -1,18 +1,17 @@
-<form>
-    <mat-form-field>
-        <mat-label>Workout Name</mat-label>
-        <input type="text" matInput>
-    </mat-form-field>
+<div class='main-content'>
+    <ng-container [ngSwitch]="exerciseSelectionType">
 
-    <div class="workout-details">
-        <mat-form-field>
-            <mat-label>Reps</mat-label>
-            <input type="number" matInput>
-        </mat-form-field>
+        <ng-container *ngSwitchCase="'Weights'">
+            <app-weights-form></app-weights-form>
+        </ng-container>
 
-        <mat-form-field>
-            <mat-label>Weight</mat-label>
-            <input type="number" matInput>
-        </mat-form-field>
-    </div>
-</form>
+        <ng-container *ngSwitchCase="'Cardio'">
+            <app-cardio-form></app-cardio-form>
+        </ng-container>
+
+        <ng-container *ngSwitchCase="'Hiit'">
+            <app-hiit-form></app-hiit-form>
+        </ng-container>
+
+    </ng-container>
+</div>
