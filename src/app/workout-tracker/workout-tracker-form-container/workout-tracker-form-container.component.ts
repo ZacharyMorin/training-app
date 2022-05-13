@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IExerciseSelectionType } from '../../models/exercise.model';
 
 
 @Component({
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./workout-tracker-form-container.component.scss']
 })
 export class WorkoutTrackerFormContainerComponent implements OnInit {
+  @Input() exerciseSelectionType: IExerciseSelectionType;
 
   constructor() { }
 

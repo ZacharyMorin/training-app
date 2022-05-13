@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IExerciseSelectionType } from '../../models/exercise.model';
 
 
 @Component({
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkoutTrackerContainerComponent implements OnInit {
 	startExercise: boolean = false;
+	selectedExerciseType: IExerciseSelectionType = null;
 
 
 	constructor() {}
@@ -16,8 +18,8 @@ export class WorkoutTrackerContainerComponent implements OnInit {
 	ngOnInit() {
 	}
 
-	selectedExerciseType(id) {
-		alert(id);
+	exerciseTypeSelection(selection) {
+		this.selectedExerciseType = selection;
 	}
 
 }

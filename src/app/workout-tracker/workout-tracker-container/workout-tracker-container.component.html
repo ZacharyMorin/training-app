@@ -6,7 +6,14 @@
 
     <ng-template #selectExerciseType>
         <app-exercise-type-selection 
-            (selectedExerciseType)='selectedExerciseType($event)'
+            *ngIf='!selectedExerciseType; else exerciseFormContainer'
+            (selectedExerciseType)='exerciseTypeSelection($event)'
         ></app-exercise-type-selection>
+    </ng-template>
+
+    <ng-template #exerciseFormContainer>
+        <app-workout-tracker-form-container
+            [exerciseSelectionType]='selectedExerciseType'
+        ></app-workout-tracker-form-container>
     </ng-template>
 </div>
