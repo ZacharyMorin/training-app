@@ -10,6 +10,7 @@ import { WorkoutTrackerFormContainerComponent } from './workout-tracker-form-con
 import { WeightsFormComponent } from './weights-form/weights-form.component';
 import { CardioFormComponent } from './cardio-form/cardio-form.component';
 import { HiitFormComponent } from './hiit-form/hiit-form.component';
+import { ExerciseListComponent } from './exercise-list/exercise-list.component';
 
 
 @NgModule({
@@ -17,10 +18,11 @@ import { HiitFormComponent } from './hiit-form/hiit-form.component';
 		WorkoutTrackerContainerComponent,
 		WorkoutTrackerFormContainerComponent,
 		StartExerciseComponent,
-  	ExerciseTypeSelectionComponent,
+		ExerciseTypeSelectionComponent,
 		WeightsFormComponent,
 		CardioFormComponent,
-		HiitFormComponent
+		HiitFormComponent,
+		ExerciseListComponent
 	],
 	imports: [
 		CommonModule,
