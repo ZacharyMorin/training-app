@@ -1,11 +1,16 @@
 <div class="container">
-    <app-start-exercise
-        *ngIf="!startExercise; else selectExerciseType"
-        (startExercise)="startExercise = !startExercise"
-    ></app-start-exercise>
+    <ng-container *ngIf="!startExercise; else selectExerciseType">
+        <app-exercise-list></app-exercise-list>
+
+        <mat-divider></mat-divider>
+
+        <app-start-exercise
+            (startExercise)="startExercise = !startExercise"
+        ></app-start-exercise>
+    </ng-container>
 
     <ng-template #selectExerciseType>
-        <app-exercise-type-selection 
+        <app-exercise-type-selection
             *ngIf='!selectedExerciseType; else exerciseFormContainer'
             (selectedExerciseType)='exerciseTypeSelection($event)'
         ></app-exercise-type-selection>

@@ -12,6 +12,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatListModule } from '@angular/material/list';
+
 
 const MAT_MODULES = [
 	MatToolbarModule,
@@ -25,7 +27,9 @@ const MAT_MODULES = [
 	MatSelectModule,
 	MatCardModule,
 	MatIconModule,
-	MatTooltipModule
+	MatTooltipModule,
+	MatListModule
+
 ];
 
 @NgModule({

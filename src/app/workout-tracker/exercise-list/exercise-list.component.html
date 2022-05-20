@@ -1,1 +1,8 @@
-<p>exercise-list works!</p>
+<div class="container">
+    <mat-card-title>Select An Exercise</mat-card-title>
+    <mat-selection-list [multiple]="false">
+        <mat-list-option *ngFor="let exercise of exerciseList" [value]="exercise">
+            {{exercise}}
+        </mat-list-option>
+    </mat-selection-list>
+</div>
